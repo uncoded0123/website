@@ -1,0 +1,60 @@
+{# home2 html #}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+<head>
+  <!-- text encoding -->
+  <meta charset="utf-8">
+  <title>Circuit Board</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet"
+   href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+   integrity="<lookup what to enter here>"
+   crossorigin="anonymous">
+  <!-- Responsive (contents scale to device) meta tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body style="background-color: rgb(255, 255, 255); font-size: 20px; font-weight: bold;">
+<h2>
+  <p>
+    {{id}}
+    {{x}}
+  </p>
+</h2>
+
+<form  action="/button_val_to_sqlite" method="post">
+  <p>
+    <input type="submit" class="btn btn-primary btn-lg" name="key" value="Turn On"
+    style="font-size: 200%; height: 100px; width: 200px;">
+  </p>
+  <p
+  ><input type="submit" class="btn btn-primary btn-lg" name="key" value="Turn Off"
+  style="font-size: 200%; height: 100px; width: 200px;">
+  </p>
+</form>
+
+<form action="/sensor_data_results_app_route" method="post">
+<p>
+  <input type="submit" class="btn btn-primary btn-lg" name="key"
+  value="Check Data" style="font-size: 150%; height: 100px; width: 200px;">
+</p>
+</form>
+
+<form action="/login" method="post">
+  <input name="key">
+  <input type="submit">
+</form>
+
+<br>
+<footer>
+  <h6 font-size: 70%;>
+  <enter footer here>
+  </h6>
+</footer>
+
+</body>
+
+</html>
